@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOMseleciton</title>
+</head>
+<script src="https://d3js.org/d3.v4.js"></script>
+<body>
+<p id="firstparagraph">First paragraph</p>
+<p id="secondparagraph">Second paragraph</p>
+
+
+<h2>Select with method selectall()</h2>
+<h2>Select with method selectall()</h2>
+<h2>Select with method selectall()</h2>
+
+<script>
+		
+	d3.select("p").style("color","green");
+	d3.select("#firstparagraph").style("margin-top","50px");
+	d3.select("#secondparagraph").style("color","orange");
+	d3.selectAll("h2").style("color","yellow");
+
+</script>
+
+</body>
+</html>

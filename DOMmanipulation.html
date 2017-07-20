@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOMmanipulation</title>
+	<script src="https://d3js.org/d3.v4.js"></script>
+</head>
+<body>
+<p>This text will be changed</p>
+
+<div class="DivForAdd">
+</div>
+
+<div class="DivForRemove">
+<h2>This element will be removed</h2>
+</div>
+
+<h1>Here will be added p element</h1>
+
+<script>
+d3.select("p").text("Changed text");
+d3.select(".DivForAdd").append("p").text("Added text into DivForAdd");
+d3.select(".DivForRemove").select("h2").remove();
+d3.select("h1").html("<p>In H1 we added P element</p>");
+</script>
+</body>
+</html>
